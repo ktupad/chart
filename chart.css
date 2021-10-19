@@ -1,0 +1,67 @@
+
+.article { display: grid;  grid-gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));}
+.article div { display: grid; place-items: center;}
+
+* {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+h1 {font: 24px sans-serif;}
+
+.chart-bar {fill: #004761;}
+.chart-bar:hover {fill: darkgray;}
+.chart-bar-axis {font: 10px sans-serif;}
+.chart-bar-axis path,.chart-bar-axis line {fill: none;stroke: #000;shape-rendering: crispEdges;}
+.chart-bar-x.axis path {display: none;}
+
+.img{ width:100%; height: auto;}
+
+.chart-pie-text { fill: #000;
+transform: translateY(0.25em);
+}
+
+.chart-pie-number {
+font-size: 0.5em;
+line-height: 1;
+text-anchor: middle;
+transform: translateY(-0.25em);
+}
+
+.chart-pie-label {
+font-size: 0.2em;
+text-transform: uppercase;
+text-anchor: middle;
+transform: translateY(0.7em);
+}
+
+
+.figure-key {
+min-width: calc(8 / 12);
+}
+
+.figure-key [class*="shape-"] {
+margin-right: 6px;
+}
+
+.figure-key-list {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.figure-key-list li {
+margin: 0 0 8px;
+padding: 0;
+}
+
+.shape-circle {
+display: inline-block;
+vertical-align: middle;
+width: 16px;
+height: 16px;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;
+}

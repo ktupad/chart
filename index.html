@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="Description" content="Ktupad MVC Framework by wawan sismadi">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+<title>Ktupad</title>
+<link rel="stylesheet" type="text/css" href="chart.css" async>
+</head>
+<body>
+<article class="article">
+<div  id="pie-svg"></div>
+<div  id="pie-key"></div>
+<div  id="bar-svg"></div>
+<div  id="line-svg"></div>
+</article>
+
+<script type="text/javascript" src="chart.js"></script>
+<script>
+arr=[
+{nama:"blue",isi:20},
+{nama:"green",isi:120},
+{nama:"gold",isi:200},
+{nama:"purple",isi:80},
+{nama:"red",isi:20},
+{nama:"red",isi:20},
+{nama:"red",isi:20},
+{nama:"red",isi:20},
+{nama:"red",isi:20},
+{nama:"red",isi:20},
+];
+
+document.getElementById('pie-svg').innerHTML=chart.pie(arr).svg;
+document.getElementById('pie-key').innerHTML=chart.pie(arr).key;
+document.getElementById('bar-svg').innerHTML=chart.bar(arr);
+document.getElementById('line-svg').innerHTML=chart.line(arr);
+</script>
+</body>
+</html>
